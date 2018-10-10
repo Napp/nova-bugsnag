@@ -2,6 +2,8 @@
 
 Add bugsnag statistical cards for your Laravel Nova Dashboard.
 
+![Example](https://raw.githubusercontent.com/Napp/nova-bugsnag/master/docs/screenshot.png)
+
 ## Install
 
 You need to run the following command:
