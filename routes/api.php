@@ -14,6 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
- Route::get('/critical-errors', function (Request $request) {
-     return response()->json((new \Napp\NovaBugsnag\Bugsnag())->getCriticalErrors());
- });
+Route::get('/critical-errors', ' Napp\NovaBugsnag\Bugsnag@getCriticalErrorsJson');

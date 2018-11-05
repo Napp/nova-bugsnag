@@ -83,6 +83,11 @@ class Bugsnag
         })->toArray();
     }
 
+    public function getCriticalErrorsJson()
+    {
+        return response()->json($this->getCriticalErrors());
+    }
+
     /**
      * Get bugsnag Resolution value based on minute range
      * Available resolutions: 1m, 5m, 30m, 2h, 12h
