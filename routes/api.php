@@ -1,7 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Napp\NovaBugsnag\Http\Controllers\ApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
- Route::get('/critical-errors', function (Request $request) {
-     return response()->json((new \Napp\NovaBugsnag\Bugsnag())->getCriticalErrors());
- });
+Route::get('/critical-errors', ApiController::class.'@critical');
